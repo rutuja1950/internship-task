@@ -1,0 +1,109 @@
+
+body {
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+  text-align: center;
+  margin: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Main Converter Box */
+.converter {
+  background: rgba(255, 255, 255, 0.9);
+  display: inline-block;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  margin: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Input Fields */
+input, select, button {
+  font-size: 1rem;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  width: 90%;
+  transition: all 0.3s ease-in-out;
+}
+
+input {
+  border: 2px solid #ff5e62;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border: 2px solid #ff9966;
+  box-shadow: 0 0 10px rgba(255, 153, 102, 0.5);
+}
+
+/* Button Styling */
+button {
+  background: #ff5e62;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 94, 98, 0.3);
+}
+
+button:hover {
+  background: #d43f4b;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(255, 94, 98, 0.5);
+}
+
+/* Result Box */
+.result {
+  background: rgb(133, 249, 133);
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 10px;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+/* Cartoon Thermometer */
+.thermometer {
+  width: 80px;
+  height: auto;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.8);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}

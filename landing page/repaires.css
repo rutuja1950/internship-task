@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.attributes {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+ }
+.offers{
+    background-color: black;
+    color: white;
+    height: 20px;
+}
+.container{  
+    background-color: #004e64;
+    color: white;
+    height: 60px;
+}
+.home{
+    display: flex;
+    margin-top: 20px;
+}
+.wishlist{
+    margin-top: 20px;   
+}
+.liked{
+    margin-top: 20px;
+}
+.account{
+    margin-top: 20px;
+}
+.searchbar{
+    margin-top: 12px;
+}
+.searchbar input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+.searchbar button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-left: -60px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .searchbar{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    transition: duration 500ms;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    color: transparent;
+    border: 1px solid white;
+    overflow: hidden;
+    background: url(icons/search-white.svg) no-repeat;
+    /* background-size: 22px; */
+    background-position: 45% 50%;
+}
+.searchbar:hover{
+    cursor: pointer;
+    border: 1px solid #ff9950;
+    background: url(icons/search.svg) no-repeat transparent;
+    /* background-size: 22px; */
+    background-position: 45% 50%;
+}
+.searchbar:focus{
+    width: 200px;
+    cursor: pointer;
+    padding-left: 40px;
+    color: white;
+    outline: none;
+    border: 1px solid #ff9950;
+    background-color: transparent;
+    background: url();
+
+}
+
+.lower_logo{
+    background-color: #9fffcb;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.men{
+    font-weight: bolder;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.navlogo{
+    height: 57px;
+    width: 250px;
+}
+.logo{
+    background-image: url("repaires.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: color-burn;
+}
+.big{
+    display: grid;
+    place-items: center;
+    background-color: white;
+    height: 500px;
+}
+.mayur{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    overflow: auto;
+    
+}
+.mayur img{
+    width: 1500px;
+    height: 500px;
+    object-fit: contain;
+}
+.outerservive{
+    height: 270px;
+    width: 100%;
+    background-color: #fff;
+    background-size: contain;
+    overflow: hidden;
+
+}
+.boxes{
+    display: grid;
+    grid-gap: 20px;
+    padding: 120px;
+    margin:2em;
+    height: 2000px;
+    width: auto;
+    display:flex;
+    margin: top 0%;;
+    background-color: #9fffcb;
+}
+.box1{
+    background-image: url("s7.jpg");
+    height: 20px;
+    width: auto;
+    border: 2px black solid;
+    padding: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top:0%;
+    color: aqua;
+}
+.box2{
+    background-image: url("s8.jpg");
+    height: 20px;
+    width: auto;
+    border: 2px black solid;
+    padding: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top:0;
+}
+.box3{
+    background-image: url("s9.jpg");
+    height: 20px;
+    width: auto;
+    border: 2px black solid;
+    padding: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0%;
+}
+.box4{
+    background-image: url("s10.jpg");
+    height: 20px;
+    width: auto;
+    border: 2px black solid;
+    padding: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0%;
+}

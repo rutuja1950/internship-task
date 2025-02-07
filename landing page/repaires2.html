@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="repaires2.css">
+    <head>
+      <!-- Other head content -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"></div>
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Search...">
+          <button id="search-button"><i class="fa fa-search"></i></button>
+      </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">More</a>
+                <div class="dropdown-content">
+                    <a href="#link1">Link 1</a>
+                    <a href="#link2">Link 2</a>
+                    <a href="#link3">Link 3</a>
+                </div>
+            </li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    <section class="content">
+      <h1>Our Repairing Services</h1>
+      <div class="photo-grid">
+          <div class="photo-item"><img src="CCTV .png" alt="Repair Photo 1"> 
+          <a><h5>CCTV installation</h5></a>
+          <a> price:100</a>
+          </div>
+          <div class="photo-item"><img src="FRIDGE.png" alt="Repair Photo 2"></div>
+          <div class="photo-item"><img src="MIXER.png" alt="Repair Photo 3"></div>
+          <div class="photo-item"><img src="FAN REPAIRING.png" alt="Repair Photo 4"></div>
+          <div class="photo-item"><img src="DEEP FREEZER.png" alt="Repair Photo 5"></div>
+          <div class="photo-item"><img src="SIDE BY SIDE DOOR FRIDGE.png" alt="Repair Photo 6"></div>
+          <div class="photo-item"><img src="SINGLE DOOR FRIDGE.png" alt="Repair Photo 7"></div>
+          <div class="photo-item"><img src="AC SERVICES.png" alt="Repair Photo 8"></div>
+          <div class="photo-item"><img src="MOTOR.jpg" alt="Repair Photo 9"></div>
+          <div class="photo-item"><img src="COOLER.jpg" alt="Repair Photo 10"></div>
+      </div>
+  </section>
+  <section id="testimonials" class="testimonials">
+    <h2>currently only fan and cooler repairing services are available</h2>
+    <div class="testimonial-item">
+        <p>"Excellent service! My phone looks brand new again."</p>
+        <p>- John Doe</p>
+    </div>
+    <div class="testimonial-item">
+        <p>"Quick and professional. Highly recommend!"</p>
+        <p>- Jane Smith</p>
+    </div>
+    <!-- Add more testimonials as needed -->
+</section>
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-section about">
+          <h2>About Us</h2>
+          <p>We are a leading repair service provider, committed to delivering top-notch solutions for all your repair needs. Our experienced technicians ensure quality and reliability.</p>
+      </div>
+      <div class="footer-section links">
+          <h2>Quick Links</h2>
+          <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#faq">FAQs</a></li>
+          </ul>
+      </div>
+      <div class="footer-section contact">
+          <h2>Contact Us</h2>
+          <p><i class="fa fa-map-marker"></i> 123 Repair St, Fixit City, XY 12345</p>
+          <p><i class="fa fa-phone"></i> (123) 456-7890</p>
+          <p><i class="fa fa-envelope"></i> info@repairingservice.com</p>
+      </div>
+      <div class="footer-section social">
+          <h2>Follow Us</h2>
+          <div class="social-icons">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+          </div>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 RepairingService. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+    <script src="script.js"></script>
+    <script>
+      function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+}
+    </script>
+    <script>
+      document.getElementById('search-button').addEventListener('click', function() {
+    const query = document.getElementById('search-input').value;
+    if (query) {
+        // Redirect to a search results page or perform search logic here
+        alert('You searched for: ' + query);
+    } else {
+        alert('Please enter a search term.');
+    }
+});
+
+    </script>
+  
+</body>
+</html>
